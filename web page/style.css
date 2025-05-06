@@ -1,0 +1,70 @@
+
+    
+
+        nav{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li{
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a.active {
+            background-color: #e2d627d8;  /* Highlight color (Orange) */
+            color: white;
+            padding: 10px 10px;  
+            border-radius: 5px;  
+        }
+        form{
+            width: 30%;
+            height: 60%;
+            margin: 0 auto;
+            margin-top: 0%;
+            margin-left: 10%;
+            margin-bottom: 0%;
+            padding: 5px;
+            padding-left: 10px;  
+            padding-bottom: 10px;
+            background: #30277ed8;
+            border-radius: 10px;
+        }
+      label{
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+
+      }
+        input[type="text"], input[type="password"]{
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+       input[type="submit"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            background-color: #7a798ad8;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        input[type="submit"]:hover{
+            background-color: #1f1e2cd8;
+            color: white;
+        }
+    

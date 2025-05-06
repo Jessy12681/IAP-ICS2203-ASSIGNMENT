@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="log in.html" class="active">login/signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="welcome-text">
+            <h2>WELCOME</h2>
+            <p>Please fill in the form below to sign up</p>
+        </div>
+        <form class="signup-form">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" placeholder="Enter firstname" required><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" placeholder="Enter lastname"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password" minlength="6" required><br>   
+            <input type="submit" value="Sign up"><br>
+        </form>
+    </div>
+
+    <div class="login-container">
+        <header>Already have an account?</header>
+        <input type="button" value="Log in" onclick="openloginform()">
+        <div id="login" class="form-popup">
+            <div class="form-container">
+                <h2 style="color: blue;">Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+                <button type="submit">Login</button>
+                <button type="button" class="btn cancel" onclick="closeloginform()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <style>
+        body {
+            background-image: url("new.jpg");
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            text-align: center;
+            margin-left: 5%;
+            height: 80vh;
+        }
+        .welcome-text {
+            margin-right: 0px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .signup-form {
+            background: #30277ed8;
+            border-radius: 10px;
+            padding: 20px;
+            color: white;
+        }
+        .login-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+        .form-container input[type="text"], .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+        .form-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom:10px;
+        }
+        .form-container .btn.cancel {
+            background-color: red;
+        }
+    </style>
+</body>
+</html>
